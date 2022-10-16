@@ -1,7 +1,7 @@
 #include <iostream>
 
 // cout << (insertion operator)
-// sin >> (extraction operator)
+// cin >> (extraction operator)
     
 int main(){
 
@@ -22,3 +22,4 @@ int main(){
 
     return 0;
 }
+

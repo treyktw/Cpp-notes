@@ -1,2 +1,2 @@
 
-void showChoice(char choice);
+}

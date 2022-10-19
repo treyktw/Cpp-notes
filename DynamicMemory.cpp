@@ -11,17 +11,35 @@ int main(){
     //                  we would need. Makes programs more flexiable
     //                  especially when accpeting user input
 
-    int *pNum = NULL;
+//    int *pNum = NULL;
+//
+//    pNum = new int;
+//
+//    *pNum = 21;
+//
+//    std::cout << "address: " << pNum << '\n';
+//    std::cout << "value: " << *pNum << '\n';
+//
+//
+//    delete pNum;
 
-    pNum = new int;
 
-    *pNum = 21;
+    char *pGrades = NULL;
+    int size;
 
-    std::cout << "address: " << pNum << '\n';
-    std::cout << "value: " << *pNum << '\n';
+    std::cout << "How many grades to enter in?; ";
+    std::cin >> size;
 
+    pGrades = new char[size];
 
-    delete pNum;
+    for(int i = 0; i < size; i++){
+        std::cout << "Enter grade #" << i + 1 << ": ";
+        std::cin >> pGrades[i];
+    }
+    for(int i = 0; i < size; i++){
+        std::cout << pGrades[i] << " ";
+    }
+    delete[] pGrades;
 
     return 0;
 }
